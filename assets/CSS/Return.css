@@ -1,0 +1,40 @@
+#return {
+	margin-top: 2%;
+	position: fixed;
+	text-align: center;
+	width: 28%;
+}
+
+#return a {
+  left: 5%;
+	display: list-item;
+	background-color: rgb(50,50,50);
+	margin: 2%;
+	padding: 5%;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	font-size: 140%;
+  list-style: none;
+	text-align: center;
+  transition: background-color 1s;
+}
+
+#return a:hover {
+	background-color: rgb(255,50,50);
+	transition: background-color 0.5s;
+}
+
+#thanks, #err {
+	float: right;
+	margin-left: 30%;
+	margin-right: 5%;
+	background-color: white;
+	border: solid 3px black;
+	width: 60%;
+}
+
+#thanks img {
+	width: 250px;
+	height: 250px;
+}

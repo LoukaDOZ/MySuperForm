@@ -1,0 +1,75 @@
+.public_form {
+	display: inline-block;
+	background-color: rgb(255,255,255);
+	margin: 0.5%;
+	padding: 2%;
+	width: 25%;
+  height: 300px;
+	color: black;
+	text-decoration: none;
+	font-size: 140%;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  border: solid 3px black;
+	transition: background-color 1s;
+}
+
+.form_title {
+  color: rgb(255,50,50);
+  font-size: 180%;
+  border-bottom: solid 2px black;
+  padding-bottom: 1%;
+}
+
+.form_description {
+  margin-top: 1%;
+  margin-bottom: 4%;
+  font-size: 140%;
+}
+
+.form_box .public_form {
+  transition: 1s;
+}
+
+.form_box .public_form .form_title {
+  transition: 1s;
+}
+
+.form_box:hover .public_form {
+  background-color: rgb(220,50,50);
+  transition: 0.5s;
+}
+
+.form_box:hover .public_form .form_title {
+  color: white;
+  transition: 0.5s;
+}
+
+.creator {
+  padding: 1%;
+}
+
+.creator_title {
+  border-bottom: solid 2px black;
+  padding-bottom: 1%;
+  font-size: 130%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: -1%;
+}
+
+.login {
+  font-size: 120%;
+  margin-bottom: 1%;
+}
+
+.public_form img {
+  width: 100px;
+  height: 100px;
+  border: solid 2px black;
+}
+
+#nothing {
+  font-size: 150%;
+  color: white;
+}

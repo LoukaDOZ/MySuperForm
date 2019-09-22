@@ -1,0 +1,139 @@
+#aside_questions {
+	position: fixed;
+	left: 1%;
+	top: 37%;
+	background-color: white;
+	border: solid 3px black;
+	text-align: center;
+	width: 22%;
+	padding-bottom: 1%;
+}
+
+#aside_questions input {
+	background-color: rgb(200,50,50);
+	width: 60%;
+	color: black;
+	font-size: 100%;
+	margin-top: 1%;
+	padding: 1%;
+	border: solid 2px black;
+	text-align: center;
+	border-radius: 50px;
+	transition: all 1s;
+}
+
+#aside_questions input:focus, #aside_questions input:hover {
+	width: 80%;
+	border: solid 3px orange;
+	border-radius: 0px;
+	background-color: rgb(50,50,50);
+	color: white;
+	transition: all 0.3s;
+}
+
+#aside_questions input:focus {
+	border-bottom: hidden;
+}
+
+.autocomplete {
+	position: absolute;
+	border: solid 3px orange;
+	border-top: solid 2px white;
+	width: 81.9%;
+	left: 8.3%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	max-height: 150%;
+	overflow-y: scroll;
+	z-index: 100;
+}
+
+#autocomplete2 {
+	margin-top: -1%;
+}
+
+.autocomplete a {
+	text-decoration: none;
+	color: white;
+	transition: all 1s;
+}
+
+.autocomplete a li {
+	background-color: rgb(50,50,50);
+	text-align: left;
+	padding-left: 0;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	overflow: hidden;
+	word-wrap: break-word;
+	transition: padding 0.5s;
+}
+
+.autocomplete a:hover li {
+	background-color: rgb(255,50,50);
+	padding-left: 5%;
+	transition: padding 0.3s;
+}
+
+#reftitle {
+	font-weight: bold;
+	font-size: 130%;
+}
+
+.refquestion {
+	font-size: 120%;
+	color: rgb(255,50,50) !important;
+}
+
+.aside_title {
+	border-bottom: solid 2px black;
+	margin: 2% 5% 3% 5%;
+	padding-bottom: 1%;
+}
+
+#aside_questions button:first-of-type {
+	margin-top: 3% !important;
+}
+
+#aside_questions button {
+	border-radius: 50px;
+  border-style: none;
+  width: 65%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 100%;
+  text-align: center;
+  background-color: rgb(20,20,20);
+  color: white;
+	margin-top: 0.5%;
+  transition: all 1s;
+}
+
+#aside_questions button:hover {
+  cursor: pointer;
+  width: 80%;
+  background-color: rgb(255,50,50);
+  transition: all 0.5s;
+}
+
+#go_to {
+	margin-top: 4%;
+	margin-bottom: -4%;
+	line-height: 70%;
+}
+
+#go_to a {
+	text-decoration: none;
+	color: black;
+	display: inline;
+	margin-top: 3%;
+	font-size: 100%;
+	transition: all 1s;
+}
+
+#go_to a:hover {
+	color: rgb(255,50,50);
+	font-size: 110%;
+	transition: all 0.5s;
+}

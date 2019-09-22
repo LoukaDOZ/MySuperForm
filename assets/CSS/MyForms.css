@@ -1,0 +1,156 @@
+#add_form img {
+	width: 5%;
+	height: 5%;
+	background-color: rgb(100,100,100);
+	border-radius: 100%;
+	border: solid 3px black;
+	transition: all 0.5s;
+}
+
+#add_form img:hover {
+	width: 7%;
+	height: 7%;
+	margin-top: -1%;
+	transform: rotateZ(360deg);
+	transition: all 0.5s;
+}
+
+.form_list {
+	background-color: white;
+	border: solid 3px black;
+	color: black;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 4%;
+	text-align: left;
+}
+
+.form_list a img {
+	width: 5%;
+	height: 5%;
+	margin-top: -2.5%;
+	margin-left: 0.3%;
+	background-color: rgb(100,100,100);
+	border-radius: 100%;
+	border: solid 3px black;
+	transition: all 0.5s;
+}
+
+.form_list a img:hover {
+	width: 7%;
+ 	height: 7%;
+ 	margin-top: -3.5%;
+ 	transform: rotateZ(360deg);
+ 	transition: all 0.5s;
+}
+
+.form_list h3 {
+	text-align: center;
+	font-size: 200%;
+	border-bottom: solid 2px black;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-bottom: 2%;
+	word-wrap: break-word;
+}
+
+#description {
+	text-align: center;
+	font-size: 120%;
+	margin-top: -1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	word-wrap: break-word;
+}
+
+#key {
+	text-align: right;
+	font-size: 120%;
+	margin-top: -2%;
+	margin-right: 1%;
+}
+
+.number_answer{
+	text-align: center;
+	border-top: solid 2px black;
+	padding-top: 1%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.search_title {
+	color: white;
+	font-size: 200%;
+	border-bottom: solid 3px black;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding-bottom: 0.5%;
+	margin-bottom: 1%;
+}
+
+#search2{
+	margin-bottom: 3%;
+	text-align: left;
+	width: 40%;
+	color: white;
+	background-color: rgb(30,30,30);
+	border: solid 3px white;
+	padding: 1%;
+	font-size: 120%;
+	transition: 0.5s;
+}
+
+#search2:hover, #search2:focus{
+	width: 70%;
+	transition: 0.3s;
+}
+
+.autocomplete {
+	position: absolute;
+	border: solid 3px white;
+	border-right: solid 3.5px white;
+	border-top: solid 1px white;
+	background-color: rgb(30,30,30);
+	width: 71.2%;
+	left: 14.2%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	max-height: 250px;
+	overflow-y: scroll;
+	z-index: 100;
+}
+
+#autocomplete2 {
+	margin-top: -3.1%;
+}
+
+.autocomplete a {
+	text-decoration: none;
+	color: white;
+	transition: all 1s;
+}
+
+.autocomplete a li {
+	background-color: rgb(50,50,50);
+	text-align: left;
+	padding-left: 1.5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	overflow: hidden;
+	word-wrap: break-word;
+	font-size: 120%;
+	transition: padding 0.5s;
+}
+
+.autocomplete a:hover li {
+	background-color: rgb(255,50,50);
+	padding-left: 5%;
+	transition: padding 0.3s;
+}
+
+.anchor {
+	height: 0;
+	padding: 0;
+	margin: 0;
+}

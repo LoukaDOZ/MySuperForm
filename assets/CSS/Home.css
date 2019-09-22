@@ -1,0 +1,94 @@
+#welcome_title {
+	margin-top: 5%;
+	font-size: 40px;
+	color: black;
+	border: solid 5px black;
+	background-color: rgb(255,255,255);
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-bottom: 4%;
+}
+
+#welcome_title p {
+	margin-top: 1%;
+	margin-bottom: 2%;
+}
+
+#welcome_title span:nth-of-type(1) {
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+#welcome_title span:nth-of-type(2) {
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+#welcome_title span:nth-of-type(3) {
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes bounce {
+	0% {
+		font-size: 40px;
+		font-weight: normal;
+	}
+
+	50% {
+		font-size: 100px;
+		font-weight: bold;
+	}
+
+	100% {
+		font-size: 100px;
+		font-weight: bold;
+		color: rgb(220,50,50);
+	}
+}
+
+#global_block {
+	margin-top: 2%;
+}
+
+.welcome_block {
+	display: inline-block;
+	background-color: rgb(255,255,255);
+	margin: 0.5%;
+	padding: 2%;
+	width: 18%;
+	color: black;
+	text-decoration: none;
+	font-size: 140%;
+	transition: background-color 1s;
+}
+
+#answer:hover {
+	background-color: rgb(50,190,50);
+	transition: background-color 0.5s;
+}
+
+#connect:hover {
+	background-color: rgb(190,130,50);
+	transition: background-color 0.5s;
+}
+
+#modify:hover {
+	background-color: rgb(190,50,50);
+	transition: background-color 0.5s;
+}
+
+#see:hover {
+	background-color: rgb(50,50,170);
+	transition: background-color 0.5s;
+}
+
+.welcome_block img {
+	width: 100px;
+	margin-top: 3%;
+}

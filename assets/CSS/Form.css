@@ -1,0 +1,47 @@
+form {
+  background-color: rgb(255,255,255);
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 3%;
+  border: solid 3px black;
+}
+
+form input[type=text], form input[type=password], textarea {
+  margin-bottom: 1%;
+  width: 60%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 150%;
+  text-align: center;
+  background-color: rgb(20,20,20);
+  color: white;
+  resize: none;
+  transition: all 1s;
+}
+
+form input[type=text]:hover, form input[type=text]:focus, form input[type=password]:hover, form input[type=password]:focus, textarea:hover, textarea:focus {
+  width: 80%;
+  border: solid 5px orange;
+  transition: all 0.5s;
+}
+
+.submit {
+  border-radius: 50px;
+  margin-bottom: 1%;
+  border-style: none;
+  width: 30%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 150%;
+  text-align: center;
+  background-color: rgb(20,20,20);
+  color: white;
+  transition: all 1s;
+}
+
+.submit:hover {
+  cursor: pointer;
+  width: 40%;
+  background-color: rgb(255,50,50);
+  transition: all 0.5s;
+}

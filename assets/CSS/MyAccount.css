@@ -1,0 +1,58 @@
+#account_infos {
+	font-size: 200%;
+	color: black;
+	background-color: rgb(255,255,255);
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 3%;
+  border: solid 3px black;
+}
+
+#avatar {
+	width: 250px;
+	height: 250px;
+	border: solid 3px black;
+}
+
+#my_form {
+	text-decoration: none;
+	border-radius: 50px;
+  margin-bottom: 1%;
+  border-style: none;
+  padding: 2%;
+  background-color: rgb(20,20,20);
+  color: white;
+  transition: all 1s;
+}
+
+#my_form:hover {
+  cursor: pointer;
+  padding-right: 8%;
+	padding-left: 8%;
+  background-color: rgb(255,50,50);
+  transition: all 0.5s;
+}
+
+#change {
+	margin-top: 2%;
+	background-color: rgb(255,255,255);
+	padding: 2%;
+	margin-left: 15%;
+	margin-right: 15%;
+	border: solid 3px black;
+}
+
+#change a {
+	font-size: 110%;
+	text-decoration: none;
+	color: black;
+	margin: 2%;
+	font-weight: bold;
+	transition: all 2s;
+}
+
+#change a:hover {
+	color: rgb(255,50,50);
+	border-bottom: solid 2px black;
+	transition: color 0.3s;
+}

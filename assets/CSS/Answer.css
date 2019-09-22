@@ -1,0 +1,241 @@
+#head, .question {
+	margin-left: 30%;
+	margin-right: 4%;
+	margin-top: 1%;
+	background-color: white;
+	border: solid 3px black;
+	color: black;
+	text-align: left;
+}
+
+#head {
+	text-align: center;
+	font-size: 150%;
+	padding: 2%;
+}
+
+#head h2 {
+	border-bottom: solid 2px black;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-bottom: 0.5%;
+	font-weight: 800;
+	font-size: 120%;
+}
+
+#title {
+	margin-top: 7%;
+	margin-bottom: 5%;
+	color: rgb(255,50,50);
+	font-size: 180%;
+	word-wrap: break-word;
+}
+
+#creator {
+	position: fixed;
+	left: 1%;
+	bottom: 1%;
+	background-color: white;
+	border: solid 3px black;
+	text-align: center;
+	width: 22%;
+	padding-bottom: 1%;
+	font-size: 100%;
+	z-index: -50;
+}
+
+#creator_login {
+	margin-top: -1%;
+	margin-bottom: 1%;
+}
+
+#creator img {
+	width: 100px;
+	height: 100px;
+	border: solid 3px black;
+}
+
+#description{
+	word-wrap: break-word;
+}
+
+.anchor {
+	height: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.radio {
+  display: inline-block;
+}
+
+.img_button {
+	width: 5%;
+	height: 5%;
+	margin-top: -2.5%;
+	margin-left: 0.3%;
+	background-color: rgb(190,190,190);
+	border-radius: 100%;
+	border: solid 3px black;
+	transition: all 0.5s;
+}
+
+.img_button:hover {
+  width: 7%;
+ 	height: 7%;
+ 	margin-top: -3.5%;
+ 	transform: rotateZ(360deg);
+ 	transition: all 0.5s;
+}
+
+.help_text {
+	text-align: center;
+	margin: 2%;
+}
+
+.help_text p:last-of-type {
+	color: rgb(255,50,50);
+}
+
+.the_question {
+	text-align: center;
+}
+
+.question_title_box {
+	font-size: 150%;
+	padding-bottom: 1%;
+	border-bottom: solid 2px black;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-left: 10%;
+	margin-right: 10%;
+	word-wrap: break-word;
+}
+
+.question_number {
+	font-size: 150%;
+	text-align: center;
+}
+
+input[type=text], textarea {
+  margin-bottom: 1%;
+	margin-top: 2%;
+  width: 60%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 150%;
+  text-align: center;
+  background-color: rgb(20,20,20);
+  color: white;
+  resize: none;
+  transition: all 1s;
+}
+
+input[type=text] {
+	margin-top: 2%;
+	border: solid 2px rgb(0,180,235);
+}
+
+textarea {
+	margin-top: 2%;
+	border: solid 2px rgb(255,0,255);
+}
+
+input[type=date] {
+	margin-top: 2%;
+	margin-bottom: 1%;
+	padding: 2% 11% 2% 13%;
+  font-size: 150%;
+  text-align: center;
+	background-color: rgb(20,20,20);
+  color: white;
+	font-weight: bold;
+	transition: all 1s;
+}
+
+input[type=date]:hover, input[type=date]:focus {
+	padding-left: 23%;
+	padding-right: 21%;
+	border: solid 5px orange;
+	transition: all 0.5s;
+}
+
+input[type=text]:hover, input[type=text]:focus,  textarea:hover, textarea:focus {
+  width: 80%;
+  border: solid 5px orange;
+  transition: all 0.5s;
+}
+
+select, .choose {
+	margin-top: 2%;
+	margin-bottom: 1%;
+	transition: all 1s;
+}
+
+select {
+  background-color: rgb(200,50,50);
+  font-size: 80%;
+  text-align: center;
+  width: 30%;
+  padding: 1%;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 50px;
+  border: solid 3px black;
+  transition: all 1s;
+}
+
+select:hover, select:focus {
+  background-color: rgb(200,200,200);
+  font-size: 100%;
+  width: 40%;
+  margin-left: 30%;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+
+.choose {
+	color: white;
+	margin-top: 1.5%;
+	margin: 1.5% 1% 1% 1%;
+	padding: 1%;
+	padding-top: 0;
+}
+
+.choose input {
+	display: none;
+}
+
+.choose label {
+	display: inline-block;
+	background-color: rgb(50,50,50);
+	padding: 1.5%;
+	margin: 1% 2% 1% 2%;
+	font-size: 100%;
+	word-wrap: break-word;
+	max-width: 90%;
+	transition: all 0.5s;
+}
+
+.choose label:hover {
+	background-color: rgb(50,50,50);
+	font-size: 140%;
+	margin: 0.1% 1.1% 0.1% 1.1%;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.choose input:checked + label {
+	background-color: white;
+	border: solid 2px black;
+	color: black;
+	border-radius: 20px;
+	transition: all 0.5s;
+}
+
+.anchor {
+	height: 0;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 5%;
+}
