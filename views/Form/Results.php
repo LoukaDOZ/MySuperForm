@@ -112,18 +112,14 @@
       }
 
       echo "<div class='results'>";
-      echo "<div><ul>";
-      foreach($percent_title_array as $pta){
-
-        echo "<li>$pta</li>";
+      echo "<table><tbody>";
+      for($i = 0; $i < count($percent_title_array); $i++){
+        echo "<tr>";
+        echo "<td><div>".$percent_title_array[$i]."</div></td>";
+        echo "<td><div>".$percent_array[$i][0]."% (".$percent_array[$i][1].")</div></td>";
+        echo "</tr>";
       }
-      echo "</ul></div>";
-      echo "<div><ul>";
-      foreach($percent_array as $pa){
-
-        echo "<li>".$pa[0]."% (".$pa[1].")";
-      }
-      echo "</ul></div>";
+      echo "</tbody></table>";
       echo "</div>";
       echo "<p class='number_answer'>".$total." réponses</p>";
 

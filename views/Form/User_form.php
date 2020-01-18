@@ -4,6 +4,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="<?php echo css('MyForms'); ?>">
 	<script src="<?php echo js('Autocomplete'); ?>"></script>
+	<script src="<?php echo js('DeleteConfirmation'); ?>"></script>
 </head>
 <body>
 
@@ -17,7 +18,7 @@
 			$case = 1;
 			foreach($forms as $form){
 
-				echo "<a href='#goto_".$form->get_key()."' onmouseover='closeAutocomplete(false);' onmouseout='closeAutocomplete(true);' onclick=forceStopAutocomplete('autocomplete2');><li>".$form->get_title()." (Clée: ".$form->get_key().")</li></a>";
+				echo "<a href='#goto_".$form->get_key()."' onmouseover='closeAutocomplete(false);' onmouseout='closeAutocomplete(true);' onclick=forceStopAutocomplete('autocomplete2');><li>".$form->get_title()." (Clé: ".$form->get_key().")</li></a>";
 
 				$search_list[$case]['title'] = $form->get_title();
 				$search_list[$case]['key'] = $form->get_key();
@@ -39,7 +40,7 @@
 				echo "<a href=".base_url('MyForms/modify/'.$form->get_key()).">";
 				echo "<img src=".image('modify')." title='Modifier le formulaire'  alt='Modifier le formulaire' onmouseover=showInformation('Modifier//ce//formulaire');  onmouseout=hideInformation();></a>";
 				echo "<a href=".base_url('MyForms/activate/'.$form->get_key())."><img src=".image('activate')." alt='Activer le formulaire' onmouseover=showInformation('Activer//ce//formulaire');  onmouseout=hideInformation();></a>";
-				echo "<a href=".base_url('MyForms/delete/'.$form->get_key())."><img src=".image('delete')." alt='Supprimer le formulaire' onmouseover=showInformation('Supprimer//ce//formulaire');  onmouseout=hideInformation();></a>";
+				echo "<a onclick=\"deleteConfirmation('MyForms/delete/".$form->get_key()."');\" style='cursor: pointer;'><img src=".image('delete')." alt='Supprimer le formulaire' onmouseover=showInformation('Supprimer//ce//formulaire');  onmouseout=hideInformation();></a>";
 			}
 
 			if($form->get_state() == 1){
@@ -59,7 +60,7 @@
 
 				echo "<a href=".base_url('MyForms/activate/'.$form->get_key())."><img src=".image('activate')." alt='Activer le formulaire' onmouseover=showInformation('Activer//ce//formulaire');  onmouseout=hideInformation();></a>";
 				echo "<a href=".base_url('MyForms/see_results/'.$form->get_key())."><img src=".image('see_results2')." alt='Voir les résulats' onmouseover=showInformation('Voir//les//résulats//de//ce//formulaire');  onmouseout=hideInformation();></a>";
-				echo "<a href=".base_url('MyForms/delete/'.$form->get_key())."><img src=".image('delete')." alt='Supprimer le formulaire' onmouseover=showInformation('Supprimer//ce//formulaire');  onmouseout=hideInformation();></a>";
+				echo "<a onclick=\"deleteConfirmation('MyForms/delete/".$form->get_key()."');\" style='cursor: pointer;'><img src=".image('delete')." alt='Supprimer le formulaire' onmouseover=showInformation('Supprimer//ce//formulaire');  onmouseout=hideInformation();></a>";
 			}
 
 			echo "<p id='key'>Clé : ".$form->get_key()."</p>";

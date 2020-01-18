@@ -13,6 +13,7 @@
 <body>
 	<nav>
 			<a href="<?php echo base_url(); ?>" class="menu_img"><img src="<?php echo image('home'); ?>"></a>
+			<a href="<?php echo base_url('MyForms'); ?>" class="menu">Mes SuperFormulaires</a>
 			<a href="<?php echo base_url('Find'); ?>" class="menu">Trouver un SuperFormulaire</a>
 			<a href="<?php echo base_url('Modify/new_form'); ?>" class="menu">Créer un SuperFormulaire</a>
 			<?php

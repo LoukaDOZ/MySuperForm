@@ -57,6 +57,7 @@ nav {
 		top: 0px;
 		left: 50%;
 		width: 1%;
+		height: 0px;
 		color: rgb(50,50,50);
 	}
 
@@ -64,6 +65,8 @@ nav {
 		top: 69.5px;
 		left: 50%;
 		width: 1%;
+		height: auto;
+		max-height: 20px;
 		color: rgb(50,50,50);
 	}
 
@@ -71,6 +74,7 @@ nav {
 		top: 69.5px;
 		left: 0;
 		width: 100%;
+		height: auto;
 		color: rgb(50,50,50);
 	}
 
@@ -78,6 +82,7 @@ nav {
 		top: 69.5px;
 		left: 0;
 		width: 100%;
+		height: auto;
 		color: white;
 	}
 }
